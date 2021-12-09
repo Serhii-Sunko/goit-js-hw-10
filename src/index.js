@@ -84,7 +84,7 @@ const afterFetchFunction = result => {
   if (result.length > 10) {
     moreThenTenCountries();
   } else if (result.length > 1 && result.length <= 11) {
-    lessThenTenCountries(res);
+    lessThenTenCountries(result);
   } else if (result.length === 1) {
     onlyOneCountry(result);
   }
